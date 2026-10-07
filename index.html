@@ -3,67 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Magnuzone Mobile Mechanics - We Come To You</title>
     
-    <!-- Favicon Link (Updated to use the raw GitHub content URL for proper display) -->
-    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/magnuzone/Mywebsite/main/Magnuzone%20Open.png">
+    <!-- Local SEO Optimized Title & Description -->
+    <title>Magnuzone Mobile Mechanics | Top Rated Auto Repair in Omaha</title>
+    <meta name="description" content="Top-rated mobile mechanic in Omaha, NE with 14+ years experience. Your driveway is our service bay! We offer on-site brake repair, diagnostics, pre-purchase inspections, and suspension.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="https://raw.githubusercontent.com/magnuzone/Mywebsite/main/Magnuzone%20Open.jpg">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Google Fonts: Inter for main text (modern and professional), Oswald for headings (impact) -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <!-- SEO Schema Markup for Google Search dominance -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoRepair",
+      "name": "Magnuzone Mobile Mechanics",
+      "image": "https://raw.githubusercontent.com/magnuzone/Mywebsite/main/Magnuzone%20Open.jpg",
+      "telephone": "+14029130558",
+      "email": "magnuzone.com@gmail.com",
+      "url": "https://www.magnuzone.com",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Omaha",
+        "addressRegion": "NE",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        {"@type": "City", "name": "Omaha"},
+        {"@type": "City", "name": "Bellevue"},
+        {"@type": "City", "name": "Papillion"},
+        {"@type": "City", "name": "Gretna"},
+        {"@type": "City", "name": "La Vista"},
+        {"@type": "City", "name": "Elkhorn"}
+      ],
+      "description": "Expert mobile auto repair across the Omaha Metro. 14+ years experience.",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Saturday", "Sunday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        }
+      ]
+    }
+    </script>
+
     <style>
-        :root {
-            --primary-red: #dc2626; /* Tailwind red-600 */
-        }
-        
-        body {
-            /* NEW: Dark background and light text for comfort */
-            font-family: 'Inter', sans-serif;
-            scroll-behavior: smooth;
-        }
+        :root { --primary-red: #dc2626; }
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        h1, h2, h3, .brand-font { font-family: 'Oswald', sans-serif; }
 
-        h1, h2, h3, .brand-font {
-            font-family: 'Oswald', sans-serif;
-        }
-
-        /* Hero Background Pattern - Retained dark image overlay */
         .hero-bg {
             background-color: #1a1a1a;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
         }
 
-        /* Pulsing Call Button Animation */
         @keyframes pulse-shadow {
             0% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7); }
             70% { box-shadow: 0 0 0 10px rgba(220, 38, 38, 0); }
             100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
         }
-
-        .pulse-btn {
-            animation: pulse-shadow 2s infinite;
-        }
-
-        /* Clip-path for the section divider (slants) */
-        .slant-bottom {
-            /* Cuts off the bottom right corner */
-            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        }
-        
-        .slant-top {
-            /* Cuts off the top left corner */
-            clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
-        }
+        .pulse-btn { animation: pulse-shadow 2s infinite; }
+        .slant-bottom { clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
     </style>
-    <!-- Google tag (gtag.js) -->
+    
+    <!-- Google Tag -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16893755659"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -72,388 +94,300 @@
       gtag('config', 'AW-16893755659');
     </script>
 </head>
-<!-- APPLY DARK MODE TO BODY -->
+
 <body class="bg-gray-900 text-gray-200 pb-20 md:pb-0">
 
-    <!-- Top Bar (Desktop/Tablet) -->
+    <!-- Top Bar -->
     <div class="bg-black text-gray-400 py-2 text-sm hidden md:block">
         <div class="container mx-auto px-4 flex justify-between items-center">
             <p><i class="fas fa-map-marker-alt text-red-600 mr-2"></i> Serving Omaha, NE & Surrounding Areas</p>
-            <p><i class="fas fa-clock text-red-600 mr-2"></i> Mon-Fri: 9am-8pm | Weekends: Closed</p>
+            <p><i class="fas fa-clock text-red-600 mr-2"></i> Mon-Fri: 8am-8pm | Sat-Sun: 8am-6pm</p>
         </div>
     </div>
 
-    <!-- Navigation (Darkened) -->
-    <nav class="bg-gray-800 shadow-xl sticky top-0 z-50 border-b border-red-900">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 shadow-xl sticky top-0 z-50 border-b-2 border-red-700">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <!-- Logo - Font Awesome Wrench Icon -->
-            <a href="#" class="flex items-center gap-2 group">
-                <div class="w-10 h-10 bg-red-600 text-white flex items-center justify-center rounded-lg transform group-hover:rotate-12 transition duration-300">
-                    <i class="fas fa-wrench text-xl"></i>
-                </div>
+            <a href="#" class="flex items-center gap-3 group">
+                <img src="https://raw.githubusercontent.com/magnuzone/Mywebsite/main/Magnuzone%20Open.jpg" alt="Magnuzone Mechanics Logo" class="h-12 w-12 md:h-14 md:w-14 object-cover rounded-full border border-gray-700 shadow-lg transform group-hover:scale-105 transition duration-300">
                 <div>
-                    <span class="text-2xl font-bold brand-font tracking-tighter text-white">MAGNU<span class="text-red-500">ZONE</span></span>
-                    <p class="text-xs text-gray-400 font-bold tracking-widest uppercase -mt-1">Mobile Mechanics</p>
+                    <span class="text-2xl md:text-3xl font-bold brand-font tracking-tighter text-white">MAGNU<span class="text-red-500">ZONE</span></span>
                 </div>
             </a>
 
-            <!-- Desktop Nav Items -->
+            <!-- Desktop Nav -->
             <div class="hidden md:flex items-center space-x-8 font-medium text-gray-200">
                 <a href="#services" class="hover:text-red-500 transition">Services</a>
                 <a href="#how-it-works" class="hover:text-red-500 transition">How It Works</a>
                 <a href="#reviews" class="hover:text-red-500 transition">Reviews</a>
-                <!-- Removed: <a href="#photos" class="hover:text-red-500 transition">Photos</a> -->
-                <a href="tel:4029130558" class="bg-red-600 text-white px-6 py-2 rounded-full font-bold hover:bg-red-700 transition transform hover:scale-105 shadow-md">
-                    <i class="fas fa-phone-alt mr-2"></i> (402) 913-0558
+                <a href="https://forms.gle/LCX9255pi1iDM1ex9" target="_blank" class="bg-red-600 text-white px-6 py-2 rounded-full font-bold hover:bg-red-700 transition transform hover:scale-105 shadow-md">
+                    <i class="fas fa-clipboard-list mr-2"></i> Submit Intake Form
                 </a>
             </div>
 
-            <!-- Mobile Menu Button -->
+            <!-- Mobile Menu Btn -->
             <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden text-3xl text-gray-100 focus:outline-none">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
         
-        <!-- Mobile Dropdown (Darkened) -->
+        <!-- Mobile Dropdown -->
         <div id="mobile-menu" class="hidden md:hidden bg-gray-900 border-t border-gray-700">
-            <!-- Added script to close menu after clicking a link -->
             <a href="#services" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block px-4 py-3 text-gray-200 font-medium border-b border-gray-700 hover:bg-gray-800">Services</a>
             <a href="#how-it-works" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block px-4 py-3 text-gray-200 font-medium border-b border-gray-700 hover:bg-gray-800">How It Works</a>
             <a href="#reviews" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block px-4 py-3 text-gray-200 font-medium border-b border-gray-700 hover:bg-gray-800">Reviews</a>
-            <!-- Removed: <a href="#photos" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block px-4 py-3 text-gray-200 font-medium border-b border-gray-700 hover:bg-gray-800">Photos</a> -->
-            <a href="tel:4029130558" class="block px-4 py-3 text-red-500 font-bold bg-gray-800">Call Now: (402) 913-0558</a>
+            <a href="https://forms.gle/LCX9255pi1iDM1ex9" target="_blank" class="block px-4 py-3 text-white font-bold bg-red-700 text-center">Get A Quote (Intake Form)</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero-bg text-white relative slant-bottom pb-24 pt-20">
+    <header class="hero-bg text-white relative slant-bottom pb-32 pt-24">
         <div class="container mx-auto px-4 text-center md:text-left">
             <div class="md:w-2/3 lg:w-1/2">
+                <div class="inline-block bg-red-600 text-white font-bold px-3 py-1 rounded mb-4 text-sm tracking-widest uppercase">14+ Years Experience</div>
                 
-                <!-- ADJUSTED: Added tracking-wide to separate words and prevent 'Welcome' misreading -->
-                <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-4 drop-shadow-lg tracking-wide">
-                    WE COME TO <span class="text-red-500">YOU</span>
+                <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-4 drop-shadow-lg tracking-wide uppercase">
+                    Your Driveway Is Our <br><span class="text-red-500">Service Bay.</span>
                 </h1>
+                
                 <p class="text-xl md:text-2xl text-gray-300 mb-8 font-light">
-                    Expert auto repair at your home, office, or on the road. Skip the shop waiting room.
+                    Premium mobile auto repair across the Omaha Metro. Zero tow trucks required.
                 </p>
                 
-                <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
-                    <a href="tel:4029130558" class="pulse-btn bg-red-600 text-white text-lg font-bold py-4 px-8 rounded-lg shadow-lg hover:bg-red-700 transition flex items-center justify-center gap-3">
-                        <i class="fas fa-phone-alt"></i> CALL FOR QUOTE
+                <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start flex-wrap">
+                    <a href="tel:4029130558" class="pulse-btn bg-red-600 text-white text-lg font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-red-700 transition flex items-center justify-center gap-3">
+                        <i class="fas fa-phone-alt"></i> CALL
                     </a>
-                    <a href="sms:4029130558" class="bg-gray-700 border-2 border-gray-600 text-white text-lg font-bold py-4 px-8 rounded-lg shadow-lg hover:bg-gray-600 hover:text-white transition flex items-center justify-center gap-3">
-                        <i class="fas fa-comment-alt"></i> TEXT US
+                    <a href="sms:4029130558" class="bg-gray-800 border-2 border-gray-600 text-white text-lg font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-gray-700 transition flex items-center justify-center gap-3">
+                        <i class="fas fa-comment-alt"></i> TEXT
                     </a>
-                </div>
-
-                <!-- SLOGAN -->
-                <div class="mt-8 text-xl text-gray-300 font-bold tracking-wide">
-                    <p class="flex items-center gap-3 justify-center md:justify-start">
-                        <i class="fas fa-car-side text-yellow-400"></i> THE AUTO SHOP THAT FITS IN YOUR DRIVEWAY.
-                    </p>
+                    <a href="https://forms.gle/LCX9255pi1iDM1ex9" target="_blank" class="bg-gray-800 border-2 border-gray-600 text-white text-lg font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-gray-700 transition flex items-center justify-center gap-3">
+                        <i class="fas fa-clipboard-check"></i> INTAKE FORM
+                    </a>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Value Props (Darkened Cards) -->
-    <section class="py-12 -mt-16 relative z-10 px-4 bg-gray-900">
+    <!-- Value Props -->
+    <section class="py-12 -mt-20 relative z-10 px-4">
         <div class="container mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Card 1 -->
-                <div class="bg-gray-800 p-8 rounded-xl shadow-xl text-center border-b-4 border-red-600 transform hover:-translate-y-1 transition duration-300">
-                    <!-- ICON IMPROVED CONTRAST -->
-                    <div class="w-16 h-16 bg-red-600 text-white rounded-full flex items-center justify-center text-2xl mx-auto mb-4 shadow-md">
-                        <i class="fas fa-dollar-sign"></i>
+                <div class="bg-gray-800 p-8 rounded-xl shadow-xl text-center border-t-4 border-red-600">
+                    <div class="w-16 h-16 bg-gray-900 text-red-500 rounded-full flex items-center justify-center text-2xl mx-auto mb-4 border border-gray-700">
+                        <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-2 brand-font text-white">Fair Pricing</h3>
-                    <p class="text-gray-300">Lower overhead means lower costs for you. No hidden shop fees.</p>
+                    <h3 class="text-xl font-bold mb-2 brand-font text-white">Premium Quality Parts</h3>
+                    <p class="text-gray-400 text-sm">We strictly use OEM or aftermarket parts that are OE similar to ensure the longevity of your repair.</p>
                 </div>
-                <!-- Card 2 -->
-                <div class="bg-gray-800 p-8 rounded-xl shadow-xl text-center border-b-4 border-red-600 transform hover:-translate-y-1 transition duration-300">
-                    <!-- ICON IMPROVED CONTRAST -->
-                    <div class="w-16 h-16 bg-red-600 text-white rounded-full flex items-center justify-center text-2xl mx-auto mb-4 shadow-md">
+                <div class="bg-gray-800 p-8 rounded-xl shadow-xl text-center border-t-4 border-red-600">
+                    <div class="w-16 h-16 bg-gray-900 text-red-500 rounded-full flex items-center justify-center text-2xl mx-auto mb-4 border border-gray-700">
                         <i class="fas fa-clock"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-2 brand-font text-white">Fast Response</h3>
-                    <p class="text-gray-300">Same-day service often available. We value your time.</p>
+                    <h3 class="text-xl font-bold mb-2 brand-font text-white">Ultimate Convenience</h3>
+                    <p class="text-gray-400 text-sm">Don't waste a day off in a shop lobby. We bring a fully equipped shop directly to your driveway.</p>
                 </div>
-                <!-- Card 3 -->
-                <div class="bg-gray-800 p-8 rounded-xl shadow-xl text-center border-b-4 border-red-600 transform hover:-translate-y-1 transition duration-300">
-                    <!-- ICON IMPROVED CONTRAST -->
-                    <div class="w-16 h-16 bg-red-600 text-white rounded-full flex items-center justify-center text-2xl mx-auto mb-4 shadow-md">
-                        <i class="fas fa-hand-holding-heart"></i>
+                <div class="bg-gray-800 p-8 rounded-xl shadow-xl text-center border-t-4 border-red-600">
+                    <div class="w-16 h-16 bg-gray-900 text-red-500 rounded-full flex items-center justify-center text-2xl mx-auto mb-4 border border-gray-700">
+                        <i class="fas fa-file-invoice-dollar"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-2 brand-font text-white">Honest Work</h3>
-                    <p class="text-gray-300">We fix what's broken. No aggressive upselling or pressure.</p>
+                    <h3 class="text-xl font-bold mb-2 brand-font text-white">Transparent Quoting</h3>
+                    <p class="text-gray-400 text-sm">Flat-rate diagnostics with straightforward estimates. No hidden shop fees or aggressive upselling.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section - Fixed link offset with scroll-mt-24 -->
-    <!-- Kept background black for high contrast against gray body -->
-    <section id="services" class="pt-24 pb-16 bg-black text-white scroll-mt-24">
+    <!-- Services Section -->
+    <section id="services" class="pt-20 pb-12 bg-gray-900 text-white scroll-mt-24">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
-                <span class="text-red-500 font-bold uppercase tracking-wider text-sm">What We Do</span>
-                <h2 class="text-4xl font-bold text-white mt-2 mb-4">Complete Auto Repair</h2>
+                <span class="text-red-500 font-bold uppercase tracking-wider text-sm">Our Specialties</span>
+                <h2 class="text-4xl font-bold text-white mt-2 mb-4">What We Fix In Your Driveway</h2>
                 <div class="w-20 h-1 bg-red-600 mx-auto rounded"></div>
             </div>
 
-            <!-- Service Grid -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                
-                <!-- Service Item 1: Engine & Belts -->
-                <div class="bg-gray-900 p-6 rounded-lg shadow-xl hover:shadow-2xl transition text-center group cursor-pointer border border-gray-800">
-                    <!-- ICON IMPROVED VISIBILITY -->
-                    <i class="fas fa-fan text-4xl text-red-500 group-hover:text-red-400 mb-4 transition"></i>
-                    <h3 class="font-bold text-white">Engine & Belts</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 max-w-6xl mx-auto">
+                <div class="bg-black p-8 rounded-lg shadow-xl border border-gray-800 text-center hover:border-red-600 transition">
+                    <i class="fas fa-compact-disc text-5xl text-red-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Brake Service</h3>
+                    <p class="text-gray-400 text-sm">Premium pad, rotor, and caliper replacements to stop the grinding and keep your family safe.</p>
                 </div>
                 
-                <!-- Service Item 2: Battery -->
-                <div class="bg-gray-900 p-6 rounded-lg shadow-xl hover:shadow-2xl transition text-center group cursor-pointer border border-gray-800">
-                    <!-- ICON IMPROVED VISIBILITY -->
-                    <i class="fas fa-car-battery text-4xl text-red-500 group-hover:text-red-400 mb-4 transition"></i>
-                    <h3 class="font-bold text-white">Battery Replacement</h3>
+                <div class="bg-black p-8 rounded-lg shadow-xl border border-gray-800 text-center hover:border-red-600 transition">
+                    <i class="fas fa-car-battery text-5xl text-red-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Alternators & Starters</h3>
+                    <p class="text-gray-400 text-sm">Comprehensive testing and replacement for dead batteries, bad starters, and failing alternators.</p>
                 </div>
                 
-                <!-- Service Item 3: Brake Service -->
-                <div class="bg-gray-900 p-6 rounded-lg shadow-xl hover:shadow-2xl transition text-center group cursor-pointer border border-gray-800">
-                    <!-- ICON IMPROVED VISIBILITY -->
-                    <i class="fas fa-compact-disc text-4xl text-red-500 group-hover:text-red-400 mb-4 transition"></i>
-                    <h3 class="font-bold text-white">Brake Service</h3>
-                </div>
-                
-                <!-- Service Item 4: Diagnostics -->
-                <div class="bg-gray-900 p-6 rounded-lg shadow-xl hover:shadow-2xl transition text-center group cursor-pointer border border-gray-800">
-                    <!-- ICON IMPROVED VISIBILITY -->
-                    <i class="fas fa-laptop-medical text-4xl text-red-500 group-hover:text-red-400 mb-4 transition"></i>
-                    <h3 class="font-bold text-white">Diagnostics</h3>
-                </div>
-                
-                <!-- Service Item 5: Alternators/Starters -->
-                <div class="bg-gray-900 p-6 rounded-lg shadow-xl hover:shadow-2xl transition text-center group cursor-pointer border border-gray-800">
-                    <!-- ICON IMPROVED VISIBILITY -->
-                    <i class="fas fa-cogs text-4xl text-red-500 group-hover:text-red-400 mb-4 transition"></i>
-                    <h3 class="font-bold text-white">Alternators/Starters</h3>
-                </div>
-                
-                <!-- Service Item 6: AC & Heating -->
-                <div class="bg-gray-900 p-6 rounded-lg shadow-xl hover:shadow-2xl transition text-center group cursor-pointer border border-gray-800">
-                    <!-- ICON IMPROVED VISIBILITY -->
-                    <i class="fas fa-thermometer-half text-4xl text-red-500 group-hover:text-red-400 mb-4 transition"></i>
-                    <h3 class="font-bold text-white">AC & Heating</h3>
-                </div>
-                
-                <!-- Service Item 7: Pre-Purchase Insp. -->
-                <div class="bg-gray-900 p-6 rounded-lg shadow-xl hover:shadow-2xl transition text-center group cursor-pointer border border-gray-800">
-                    <!-- ICON IMPROVED VISIBILITY -->
-                    <i class="fas fa-search text-4xl text-red-500 group-hover:text-red-400 mb-4 transition"></i>
-                    <h3 class="font-bold text-white">Pre-Purchase Insp.</h3>
+                <div class="bg-black p-8 rounded-lg shadow-xl border border-gray-800 text-center hover:border-red-600 transition">
+                    <i class="fas fa-laptop-medical text-5xl text-red-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Diagnostics & Check Engine</h3>
+                    <p class="text-gray-400 text-sm">Professional mobile OBD2 scanning and root-cause diagnostics to find exactly what's failing under the hood.</p>
                 </div>
 
-                <!-- Service Item 8: Suspension & Steering -->
-                <div class="bg-gray-900 p-6 rounded-lg shadow-xl hover:shadow-2xl transition text-center group cursor-pointer border border-gray-800">
-                    <!-- ICON IMPROVED VISIBILITY -->
-                    <i class="fas fa-car-burst text-4xl text-red-500 group-hover:text-red-400 mb-4 transition"></i>
-                    <h3 class="font-bold text-white">Suspension & Steering</h3>
+                <div class="bg-black p-8 rounded-lg shadow-xl border border-gray-800 text-center hover:border-red-600 transition">
+                    <i class="fas fa-car-burst text-5xl text-red-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Suspension & Cooling</h3>
+                    <p class="text-gray-400 text-sm">Struts, shocks, control arms, ball joints, water pumps, and radiator repairs right in your driveway.</p>
+                </div>
+
+                <div class="bg-black p-8 rounded-lg shadow-xl border border-gray-800 text-center hover:border-red-600 transition">
+                    <i class="fas fa-search text-5xl text-red-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Pre-Purchase Inspections</h3>
+                    <p class="text-gray-400 text-sm">Comprehensive bumper-to-bumper mobile inspections so you can buy a used car with total confidence.</p>
+                </div>
+
+                <div class="bg-black p-8 rounded-lg shadow-xl border border-gray-800 text-center hover:border-red-600 transition">
+                    <i class="fas fa-cogs text-5xl text-red-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Engine Maintenance</h3>
+                    <p class="text-gray-400 text-sm">Serpentine belts, spark plugs, fluid top-offs, and complete tune-ups to keep your daily driver running smoothly.</p>
                 </div>
             </div>
-            
-            <div class="text-center mt-10">
-                <p class="text-gray-400 mb-4">Don't see your issue listed?</p>
-                <!-- Updated button for dark section -->
-                <a href="tel:4029130558" class="inline-block border-2 border-white text-white font-bold py-2 px-6 rounded hover:bg-red-600 hover:border-red-600 hover:text-white transition">Call to Ask a Mechanic</a>
+
+            <!-- EXCLUSIONS BOX -->
+            <div class="bg-red-950 border-l-4 border-red-500 p-6 rounded-r-lg max-w-4xl mx-auto shadow-2xl mb-6">
+                <h3 class="text-red-400 font-black text-xl uppercase mb-3"><i class="fas fa-exclamation-triangle mr-2"></i> Service Exclusions</h3>
+                <p class="text-gray-200 mb-3 text-sm">To ensure fast mobile dispatch times across the Omaha Metro, please note we <strong>DO NOT</strong> offer the following services or work on the following vehicles:</p>
+                <div class="grid md:grid-cols-2 gap-4 text-sm text-gray-300">
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Computer Flashing / Reprogramming</li>
+                        <li>Key Making / Locksmithing</li>
+                        <li>Deep Electrical Diagnostics or Wiring</li>
+                        <li>A/C Repair or Recharging</li>
+                        <li>Vehicle Alignments</li>
+                        <li>Internal Engine or Transmission Rebuilds</li>
+                    </ul>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>European Luxury (BMW, Audi, Volvo, Mercedes-Benz)</li>
+                        <li>Diesels / Heavy-Duty Commercial</li>
+                        <li>Electric Vehicles (Tesla, Rivian, etc.)</li>
+                        <li>Hybrid Vehicles</li>
+                    </ul>
+                </div>
             </div>
+
+            <!-- LEGAL & SAFETY DISCLAIMER -->
+            <p class="text-center text-gray-500 text-xs max-w-4xl mx-auto italic mt-4">
+                Disclaimer: For safety, environmental, and local zoning reasons, not all major automotive repairs can be safely or legally completed in a residential driveway or public parking lot. If a job is deemed unsafe for a mobile environment during the diagnostic process, we will advise you immediately on the best next steps.
+            </p>
         </div>
     </section>
 
-    <!-- How It Works (Darkened Text) -->
-    <section id="how-it-works" class="pt-24 pb-32 bg-black text-white slant-bottom scroll-mt-24">
+    <!-- How It Works Section (Selling the Diagnostic Fee) -->
+    <section id="how-it-works" class="pt-20 pb-32 bg-black text-white slant-bottom scroll-mt-24 border-t border-gray-800">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-4xl font-bold mb-12">How It Works</h2>
+            <h2 class="text-4xl font-bold mb-12">Our 3-Step Mobile Process</h2>
             
-            <div class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-4 relative">
+            <div class="flex flex-col md:flex-row justify-center items-stretch gap-6 relative max-w-6xl mx-auto">
                 
-                <!-- Step 1 (Retained red) -->
-                <div class="w-full md:w-1/3 p-4">
-                    <div class="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-6 shadow-lg relative z-10">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-2 text-white">1. You Call</h3>
-                    <p class="text-gray-300">Tell us what's wrong or describe the noise. We'll give you a quote over the phone.</p>
+                <!-- Step 1 -->
+                <div class="bg-gray-900 flex-1 p-8 rounded-lg border border-gray-800">
+                    <div class="w-16 h-16 bg-gray-800 text-white rounded-full flex items-center justify-center text-2xl mx-auto mb-6 shadow-lg">1</div>
+                    <h3 class="text-2xl font-bold mb-3 text-white">Submit Intake Form</h3>
+                    <p class="text-gray-400 text-sm">Click the Intake Form button and provide your Year, Make, Model, and a brief description of the issue so we can review it instantly.</p>
                 </div>
 
-                <!-- Arrow Icon (Desktop only) -->
-                <div class="hidden md:block text-gray-600 text-2xl">
-                    <i class="fas fa-chevron-right"></i>
+                <!-- Step 2 -->
+                <div class="bg-red-900 flex-1 p-8 rounded-lg border border-red-700 transform md:-translate-y-4 shadow-2xl">
+                    <div class="w-16 h-16 bg-white text-red-700 font-black rounded-full flex items-center justify-center text-2xl mx-auto mb-6 shadow-lg">2</div>
+                    <h3 class="text-2xl font-bold mb-3 text-white">Mobile Diagnostic</h3>
+                    <p class="text-red-100 text-sm">We dispatch directly to you. Our professional mobile diagnostic ensures you never pay for parts you don't actually need.</p>
                 </div>
 
-                <!-- Step 2 (Improved contrast on gray) -->
-                <div class="w-full md:w-1/3 p-4">
-                    <div class="w-20 h-20 bg-gray-700 text-red-500 rounded-full flex items-center justify-center text-3xl mx-auto mb-6 shadow-lg relative z-10">
-                        <i class="fas fa-truck-pickup"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-2 text-white">2. We Arrive</h3>
-                    <p class="text-gray-300">Our certified mechanic comes to your location fully equipped to handle the job.</p>
-                </div>
-
-                <!-- Arrow Icon (Desktop only) -->
-                <div class="hidden md:block text-gray-600 text-2xl">
-                    <i class="fas fa-chevron-right"></i>
-                </div>
-
-                <!-- Step 3 (Retained green for success) -->
-                <div class="w-full md:w-1/3 p-4">
-                    <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center text-3xl mx-auto mb-6 shadow-lg relative z-10">
-                        <i class="fas fa-thumbs-up"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-2 text-white">3. You Drive</h3>
-                    <p class="text-gray-300">We fix it on the spot. You pay after the work is done and verified.</p>
+                <!-- Step 3 -->
+                <div class="bg-gray-900 flex-1 p-8 rounded-lg border border-gray-800">
+                    <div class="w-16 h-16 bg-gray-800 text-white rounded-full flex items-center justify-center text-2xl mx-auto mb-6 shadow-lg">3</div>
+                    <h3 class="text-2xl font-bold mb-3 text-white">Flat-Rate Repair</h3>
+                    <p class="text-gray-400 text-sm">We give you a transparent final price. <strong>If you hire us to do the repair on the spot, the diagnostic fee is credited entirely toward your labor.</strong></p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Reviews Section (Darkened) -->
-    <section id="reviews" class="pt-24 pb-20 bg-gray-900 scroll-mt-24">
+    <!-- Reviews Section -->
+    <section id="reviews" class="pt-20 pb-20 bg-gray-900 scroll-mt-24">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl md:text-5xl font-bold text-center mb-4 brand-font text-white">Hear From Our Customers</h2>
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-4 brand-font text-white">Omaha Trusts Magnuzone</h2>
             <p class="text-center text-gray-400 mb-8 max-w-2xl mx-auto">We take pride in providing reliable, five-star service to the Omaha community.</p>
             
-            <!-- Google Review CTA - Professional link style (Darkened) -->
             <div class="flex justify-center mb-12">
-                 <a href="https://www.google.com/search?q=Magnuzone+Mobile+Mechanics+Reviews" target="_blank" class="flex items-center gap-2 text-red-400 font-bold hover:text-red-500 transition bg-gray-800 border border-red-900 px-5 py-2 rounded-full shadow-inner text-base">
-                    <i class="fab fa-google text-lg"></i> See All Customer Feedback on Google
+                 <a href="https://www.google.com/search?q=Magnuzone+Mobile+Mechanics+Reviews" target="_blank" class="flex items-center gap-2 text-white font-bold bg-gray-800 hover:bg-gray-700 border border-gray-600 px-6 py-3 rounded-full shadow-lg transition">
+                    <i class="fab fa-google text-red-500 text-xl"></i> Read Our Google Reviews
                 </a>
             </div>
             
-            <!-- Updated Grid: 3 columns with professional card styling (Darkened) -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                
-                <!-- Review 1 -->
-                <div class="bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 border-l-4 border-red-600">
-                    <div class="flex items-center justify-between mb-3">
-                        <div class="flex text-yellow-500 text-sm">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                        <p class="font-semibold text-xs text-gray-300">- Kim Z.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <div class="bg-black p-6 rounded-lg shadow-xl border border-gray-800">
+                    <div class="flex text-red-500 text-sm mb-3">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
-                    <p class="text-gray-300 text-sm italic line-clamp-3">"The mechanic responded quickly and handled my brake service the same day. Saved me the cost and hassle of a tow. Very efficient and professional service."</p>
+                    <p class="text-gray-300 text-sm italic mb-4">"The mechanic responded quickly and handled my brake service the same day. Saved me the cost and hassle of a tow. Very efficient."</p>
+                    <p class="font-bold text-xs text-gray-500 uppercase">- Kim Z.</p>
                 </div>
                 
-                <!-- Review 2 -->
-                <div class="bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 border-l-4 border-red-600">
-                    <div class="flex items-center justify-between mb-3">
-                        <div class="flex text-yellow-500 text-sm">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                        <p class="font-semibold text-xs text-gray-300">- Robert B.</p>
+                <div class="bg-black p-6 rounded-lg shadow-xl border border-gray-800">
+                    <div class="flex text-red-500 text-sm mb-3">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
-                    <p class="text-gray-300 text-sm italic line-clamp-3">"Service was transparent. The mechanic clearly explained the issue and stuck to fixing only what was necessary. The convenience of at-home repair is fantastic."</p>
+                    <p class="text-gray-300 text-sm italic mb-4">"Service was transparent. The mechanic clearly explained the issue and stuck to fixing only what was necessary. Fantastic at-home convenience."</p>
+                    <p class="font-bold text-xs text-gray-500 uppercase">- Robert B.</p>
                 </div>
                 
-                <!-- Review 3 -->
-                <div class="bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 border-l-4 border-red-600">
-                    <div class="flex items-center justify-between mb-3">
-                        <div class="flex text-yellow-500 text-sm">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                        <p class="font-semibold text-xs text-gray-300">- Calvin D.</p>
+                <div class="bg-black p-6 rounded-lg shadow-xl border border-gray-800">
+                    <div class="flex text-red-500 text-sm mb-3">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
-                    <p class="text-gray-300 text-sm italic line-clamp-3">"Experienced professional who quickly identified and resolved the brake problem. The repair was completed much faster than expected. A trustworthy service provider."</p>
-                </div>
-                
-                <!-- Review 4 -->
-                <div class="bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 border-l-4 border-red-600">
-                    <div class="flex items-center justify-between mb-3">
-                        <div class="flex text-yellow-500 text-sm">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                        <p class="font-semibold text-xs text-gray-300">- Caleb P.</p>
-                    </div>
-                    <p class="text-gray-300 text-sm italic line-clamp-3">"I had my struts replaced and a faulty radiator diagnosed. Pricing was competitive for the area, and the repair was completed right in my own driveway. Satisfied with the results."</p>
-                </div>
-                
-                <!-- Review 5 -->
-                <div class="bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 border-l-4 border-red-600">
-                    <div class="flex items-center justify-between mb-3">
-                        <div class="flex text-yellow-500 text-sm">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                        <p class="font-semibold text-xs text-gray-300">- Sarah L.</p>
-                    </div>
-                    <p class="text-gray-300 text-sm italic line-clamp-3">"Being able to get an oil change while at work was incredibly convenient. The service was efficient, and the work area was kept clean. I recommend this mobile option."</p>
-                </div>
-                
-                <!-- Review 6 -->
-                <div class="bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 border-l-4 border-red-600">
-                    <div class="flex items-center justify-between mb-3">
-                        <div class="flex text-yellow-500 text-sm">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                        <p class="font-semibold text-xs text-gray-300">- Mike T.</p>
-                    </div>
-                    <p class="text-gray-300 text-sm italic line-clamp-3">"The alternator replacement quote was significantly lower than local dealerships. The mechanic worked efficiently and kept me informed during the process. Good value and service."</p>
+                    <p class="text-gray-300 text-sm italic mb-4">"Experienced professional who quickly identified and resolved the problem. The alternator quote was significantly lower than local dealerships."</p>
+                    <p class="font-bold text-xs text-gray-500 uppercase">- Mike T.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section - Original design style retained for impact -->
-    <section class="py-16 bg-red-800 text-white text-center">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-4">Stranded? Car won't start?</h2>
-            <p class="text-xl mb-8 text-red-200 max-w-2xl mx-auto">We are ready to deploy. Get professional help at your location right now.</p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="tel:4029130558" class="bg-white text-red-700 font-bold text-xl py-4 px-10 rounded-lg shadow-lg hover:bg-gray-100 transition">
-                    <i class="fas fa-phone-alt mr-2"></i> CALL NOW
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer - Original design style retained (bg-black) -->
-    <footer class="bg-black text-gray-400 py-12 pb-24 md:pb-12">
+    <!-- Footer -->
+    <footer class="bg-black text-gray-400 py-12 pb-24 md:pb-12 border-t border-gray-800">
         <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
                 <span class="text-2xl font-bold brand-font text-white">MAGNU<span class="text-red-500">ZONE</span></span>
-                <p class="mt-4">Professional mobile mechanics serving Omaha and surrounding areas. We bring the shop to you.</p>
+                <p class="mt-4 text-sm">Professional mobile auto repair serving the Omaha Metro area. 14+ years experience.</p>
             </div>
             <div>
-                <h4 class="text-white font-bold uppercase mb-4">Contact Info</h4>
+                <h4 class="text-white font-bold uppercase mb-4 tracking-widest text-sm">Contact Info</h4>
                 <p class="mb-2"><i class="fas fa-phone mr-2 text-red-500"></i> (402) 913-0558</p>
+                <p class="mb-2"><a href="https://forms.gle/LCX9255pi1iDM1ex9" target="_blank" class="hover:text-white transition"><i class="fas fa-clipboard-list mr-2 text-red-500"></i> Submit Intake Form</a></p>
                 <p class="mb-2"><i class="fas fa-envelope mr-2 text-red-500"></i> magnuzone.com@gmail.com</p>
-                <p><i class="fas fa-map mr-2 text-red-500"></i> Omaha, NE</p>
             </div>
             <div>
-                <h4 class="text-white font-bold uppercase mb-4">Service Areas</h4>
-                <div class="flex flex-wrap gap-2 text-sm">
-                    <!-- Darkened badges -->
-                    <span class="bg-gray-700 text-gray-200 px-2 py-1 rounded">Downtown</span>
-                    <span class="bg-gray-700 text-gray-200 px-2 py-1 rounded">West Omaha</span>
-                    <span class="bg-gray-700 text-gray-200 px-2 py-1 rounded">Bellevue</span>
-                    <span class="bg-gray-700 text-gray-200 px-2 py-1 rounded">Papillion</span>
-                    <span class="bg-gray-700 text-gray-200 px-2 py-1 rounded">Gretna</span>
+                <h4 class="text-white font-bold uppercase mb-4 tracking-widest text-sm">Service Areas</h4>
+                <div class="flex flex-wrap gap-2 text-xs">
+                    <span class="bg-gray-800 border border-gray-700 px-3 py-1 rounded">Omaha</span>
+                    <span class="bg-gray-800 border border-gray-700 px-3 py-1 rounded">Bellevue</span>
+                    <span class="bg-gray-800 border border-gray-700 px-3 py-1 rounded">Papillion</span>
+                    <span class="bg-gray-800 border border-gray-700 px-3 py-1 rounded">Gretna</span>
+                    <span class="bg-gray-800 border border-gray-700 px-3 py-1 rounded">La Vista</span>
+                    <span class="bg-gray-800 border border-gray-700 px-3 py-1 rounded">Elkhorn</span>
                 </div>
             </div>
         </div>
-        <div class="text-center mt-12 pt-8 border-t border-gray-700 text-sm text-gray-500">
-            &copy; 2023 Magnuzone Mobile Mechanics. All rights reserved.
+        <div class="text-center mt-12 pt-8 border-t border-gray-900 text-xs text-gray-600 uppercase tracking-widest">
+            &copy; 2026 Magnuzone Mechanics LLC. All rights reserved.
         </div>
     </footer>
 
-    <!-- STICKY MOBILE CALL BAR (Darkened) -->
-    <div class="fixed bottom-0 left-0 w-full bg-gray-800 border-t border-gray-700 p-3 md:hidden z-50 flex gap-2 shadow-[0_-5px_15px_rgba(0,0,0,0.3)]">
-        <a href="tel:4029130558" class="flex-1 bg-red-600 text-white font-bold rounded flex flex-col items-center justify-center py-2 active:bg-red-800 transition">
-            <span class="text-xs uppercase opacity-90">Emergency?</span>
-            <span class="text-lg leading-none"><i class="fas fa-phone-alt mr-1"></i> CALL NOW</span>
+    <!-- STICKY MOBILE CALL BAR -->
+    <div class="fixed bottom-0 left-0 w-full bg-black border-t border-gray-800 p-2 md:hidden z-50 flex gap-2 shadow-[0_-5px_20px_rgba(0,0,0,0.5)]">
+        <a href="tel:4029130558" class="flex-1 bg-red-600 text-white rounded flex flex-col items-center justify-center py-2 active:bg-red-800 transition">
+            <i class="fas fa-phone-alt text-lg mb-1"></i>
+            <span class="text-[10px] font-bold uppercase tracking-widest">Call</span>
         </a>
-        <a href="sms:4029130558" class="w-20 bg-gray-900 text-white rounded flex flex-col items-center justify-center py-2 active:bg-black transition border border-gray-700">
-            <i class="fas fa-comment-dots text-xl mb-1"></i>
-            <span class="text-[10px] font-bold uppercase">Text</span>
+        <a href="sms:4029130558" class="flex-1 bg-gray-800 text-white rounded flex flex-col items-center justify-center py-2 active:bg-gray-700 transition border border-gray-600">
+            <i class="fas fa-comment-dots text-lg mb-1 text-gray-300"></i>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-gray-300">Text</span>
+        </a>
+        <a href="https://forms.gle/LCX9255pi1iDM1ex9" target="_blank" class="flex-1 bg-gray-800 text-white rounded flex flex-col items-center justify-center py-2 active:bg-gray-700 transition border border-gray-600">
+            <i class="fas fa-clipboard-check text-lg mb-1 text-gray-300"></i>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-gray-300">Intake Form</span>
         </a>
     </div>
 
